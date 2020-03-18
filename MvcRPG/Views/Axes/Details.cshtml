@@ -1,0 +1,50 @@
+﻿@model MvcRPG.Models.Axe
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Axe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Enchantment.Element)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enchantment.Element)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Attack)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Attack)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Handler)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Handler)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AxeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
